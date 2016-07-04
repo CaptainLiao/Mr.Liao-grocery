@@ -1,0 +1,42 @@
+body,button,h1,h2,h3,h4,h5,h6,p,input,img,ul,ol,dl,dt,dd,form,fieldset,table,td,textarea,li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 12px;
+    font-family: "Microsoft-Yahei",Î¢ÈíÑÅºÚ,ËÎÌåsans-serif,sans-serif;
+    background-color: #fff;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover,
+a:active {
+    color: #e27a00;
+}
+.clearfloat {
+    zoom: 1;
+}
+.clearfloat:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.hide{
+    display: none;
+}
+img {
+    border: none;
+}
+input,textarea,select,button {
+    outline: none;
+    border: none;
+}

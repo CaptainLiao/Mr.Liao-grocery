@@ -1,0 +1,149 @@
+/*main-banner区*/
+.main-banner{
+    height:350px;
+    position: relative;
+}
+
+.pannel {
+    width: 190px;
+    font-size: 14px;
+    background-color: #4593fd;
+}
+.pannel-group .pannel-group-item {
+    height: 36px;
+    border-top:1px solid #5aa1fe;
+    border-bottom: 1px solid #3487f2;
+    padding: 16px 0 16px 10px;
+    background: url("../images/right-arrow.png") no-repeat 176px 22px;
+}
+.pannel-group li:first-child {
+    border-top: none;
+}
+.pannel-group-item>a {
+    color: #fff;
+    font-size: 14px;
+}
+.pannel-group-item ul li {
+    float: left;
+    margin-right: 6px;
+}
+.pannel-group-item ul li a{
+    font-size: 10px;
+    color: #c2d9f8;
+}
+.pannel-group .circle {
+    display: inline-block;
+    width: 44px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    border-radius: 40%;
+    margin-left: 10px;
+    background-color: #106ac0;
+}
+/*banner区*/
+.banner {
+    width: 810px;
+    height: 350px;
+    position: absolute;
+    left: 190px;
+    top: 0;
+    background: url("../images/mian-banner.jpg");
+
+}
+
+/*平板手机区--phone*/
+.phone,
+.food {
+    width: 1000px;
+    clear: both;
+    position: relative;
+}
+.txt h3 {
+    height: 72px;
+    font-size: 24px;
+    color: #000;
+    line-height: 72px;
+    padding-left: 56px;
+    background: url("../images/h3-bg.png") no-repeat left center;
+}
+.phone-txt .more,
+.food-txt .more{
+    position: absolute;
+    left: 940px;
+    top: 42px;
+}
+.phone-group,
+.food-group {
+    width: 808px;
+    height: 395px;
+    position: absolute;
+    left: 190px;
+    top: 72px;
+    border-top: 2px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 4px solid #ff8c00;
+}
+.phone-group-list1,
+.food-group-list1 {
+    height: 269px;
+    border-bottom: 1px solid #ccc;
+}
+.phone-group-list1 li,
+.food-group-list1 li {
+    float: left;
+    width: 180px;
+    height:238px;
+    padding-top:31px;
+    padding-left:20px;
+    border-right: 1px solid #ccc;
+}
+.phone-group-list1 li:last-child,
+.food-group-list1 li:last-child {
+    border: none;
+}
+.phone-group-list1 h3,
+.food-group-list1 h3{
+    padding-top: 20px;
+}
+.food-group-list1 h3{
+    padding-left: 20px;
+}
+.phone-group-list1 .sale,
+.food-group-list1 .sale {
+    padding-left: 50px;
+    color: #ff8c00;
+    font-size: 14px;
+}
+.phone-group-list2 li,
+.food-group-list2 li {
+    width: 160px;
+    float: left;
+    padding: 26px 20px 0 20px;
+    position: relative;
+}
+
+.phone-group-list2 .description {
+    position: absolute;
+    top:26px;
+    padding-left: 70px;
+    height: 85px;
+    background: url("../images/ipad.jpg") no-repeat;
+}
+.food-group-list2 img {
+    padding-left: 15px;
+}
+.food-group-list2 p {
+    position: absolute;
+    left:100px;
+    top: 32px;
+}
+.phone-group-list2 .sale,
+.food-group-list2 .sale {
+    display: block;
+    color: #e27a00;
+    font-size: 14px;
+}
