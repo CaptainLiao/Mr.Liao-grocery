@@ -95,6 +95,7 @@ $(document).ready(function(){
 		$(this).prev().val(++$inputVal);
 		$inputVal=$inputVal;
 		var $price=$(this).parent().prev().text()*$inputVal;
+		$(this).parent().siblings(".checkbox").find(".check-one").prop("checked",true);
 		$(this).parent().next().text($price);
 		selectTotal();
 		priceTotal();
