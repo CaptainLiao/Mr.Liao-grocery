@@ -48,11 +48,15 @@
 .banner {
     width: 810px;
     height: 350px;
+    overflow: hidden;
+}
+.banner img {
+    display: inline-block;
+    width: 810px;
+    height: 350px;
     position: absolute;
     left: 190px;
     top: 0;
-    background: url("../images/mian-banner.jpg");
-
 }
 
 /*平板手机区--phone*/

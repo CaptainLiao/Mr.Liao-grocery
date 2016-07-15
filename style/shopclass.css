@@ -1,3 +1,8 @@
+.shop-nav li:hover,
+.shop-nav li.act{
+    background-color: #4593fd;
+}
+
 .shopClass {
     width: 1000px;
     margin: 10px auto;

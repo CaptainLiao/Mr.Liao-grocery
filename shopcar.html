@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>淘宝购物车</title>
+	<link rel="stylesheet" href="style/reset.css" />
+	<link rel="stylesheet" href="style/public.css" />
+	<link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+
+<div class="header">
+    <div class="header-top center-containt">
+        <p class="collect"><a href="">收藏杂货铺</a></p>
+        <p class="welcome">廖记杂货铺欢迎您！<span class="login"><a href="#">[登录]</a></span><span class="regist"><a href="#">[马上注册]</a></span></p>
+    </div><!--头部顶部区结束-->
+    <div class="header-logo">
+        <div class="header-logo-contener">
+            <div class="header-logo-btn">
+                <a href="#"><img src="images/icon/header-logo.png" alt="杂货铺" /></a>
+            </div>
+            <div class="header-search">
+                <input type="text" class="search-box" />
+                <button class="submit" type="submit" value="搜索">搜 索</button>
+            </div>
+            <div class="header-shopping">
+                <div class="shopping-car">
+                    <span><a href="shopcar.html" target="_blank">购物车</a></span>
+                </div>
+                <div class="number">
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+    </div><!--头部Logo区结束-->
+    <div class="header-nav">
+        <div class="center-containt">
+            <div class="shop-class">
+                <h3><a href="shopSelect.html" target="_blank">全部商品分类</a><span class="bottom-arrow"></span></h3>
+            </div>
+            <ul class="shop-nav">
+                <li class="act"><a href="shopclass.html" target="_blank">数码城</a></li>
+                <li><a href="shopclass.html" target="_blank">天黑黑</a></li>
+                <li><a href="shopclass.html" target="_blank">团购</a></li>
+                <li><a href="shopclass.html" target="_blank">发现</a></li>
+                <li><a href="shopclass.html" target="_blank">二手特卖</a></li>
+                <li><a href="shopclass.html" target="_blank">名品汇</a></li>
+            </ul>
+        </div>
+    </div><!--头部导航区结束-->
+</div><!--公共头部结束-->
+
+<div id="shopCar" class="shopCar">
+	<table id="cartTable">
+		<thead>
+			<tr>
+				<th class="checkbox"><input id="selectAll" class="check-all check" type="checkbox" checked="checked" /><label for="selectAll">&nbsp;全选</label></th>
+				<th class="goods">商品</th>
+				<th class="price">单价</th>
+				<th class="count">数量</th>
+				<th class="subTotal1">小计</th>
+				<th class="cancel">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check" checked="checked" /></td>
+				<td class="goods"><a href=""><img src="images/1.jpg" alt="商品图片" /><span class="goodsDes">Casio/卡西欧 EX-TR350dsfasssdfasfdgdfgagasdfasfjikolpldd</span></a></td>
+				<td class="price">5999</td>
+				<td class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count-input" value="1" />
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">5999</td>
+				<td class="cancel"><span class="delete">删除</span></td>
+			</tr>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check" checked="checked" /></td>
+				<td class="goods"><a href=""><img src="images/2.jpg" alt="商品图片" /><span class="goodsDes">Canon/佳能 PowerShot SX50 HS ldkfdfaere</span></a></td>
+				<td class="price">3888</td>
+				<td class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count-input" value="1" />
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">3888</td>
+				<td class="cancel"><span class="delete">删除</span></td>
+			</tr>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check" checked="checked" /></td>
+				<td class="goods"><a href=""><img src="images/3.jpg" alt="商品图片" /><span class="goodsDes">Sony/索尼 DSC-WX300</span></a></td>
+				<td class="price">1428</td>
+				<td class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count-input" value="1" />
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">1428</td>
+				<td class="cancel"><span class="delete">删除</span></td>
+			</tr>
+			<tr>
+				<td class="checkbox"><input type="checkbox" class="check-one check" checked="checked" /></td>
+				<td class="goods"><a href=""><img src="images/4.jpg" alt="商品图片" /><span class="goodsDes">Fujifilm/富士 instax mini 25</span></a></td>
+				<td class="price">640</td>
+				<td class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count-input" value="1" />
+					<span class="add">+</span>
+				</td>
+				<td class="subTotal">640</td>
+				<td class="cancel"><span class="delete">删除</span></td>
+			</tr>
+		</tbody>
+	</table><!-- end of table -->
+
+	<div class="footer" id="footer">
+		<input id="selectedAll" type="checkbox" class="check-all check" checked="checked" /><label class="" for="selectall">&nbsp;全选</label>
+		<a href="javascript:;" id="deleteAll" class="deleteAll">删除</a>
+		<div class="closing fr">结算</div>
+		<div class="total fr">合计：￥
+			<span class="priceTotal">0.00</span>
+		</div>
+		<div class="selected fr" id="selected">已选商品
+			<span id="selectTotal">0</span>件
+			<span class="arrowUp">↑↑</span>
+			<span class="arrowDown hide">↓↓</span>
+		</div>
+		<div id="selectedView" class="hide">
+			<div id="selectedViewList">
+				<!-- <div><img src="" alt="" /><span>取消选择</span></div> -->
+			</div>
+			<span class="dot">.<span>.</span></span>
+		</div><!-- end of selectedView -->
+	</div><!-- end of footer -->
+
+<div class="shop-footer">
+    <div class="wrapper">
+        <div class="about">
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">网站公告</a></li>
+                <li><a href="#">招贤纳士</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="tel:400-675-1234">客服热线：400-675-1234</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <ul>
+                <li>Copyright © 2009 - 2016 廖记版权所有</li>
+                <li>粤ICP备09037834号</li>
+                <li>粤ICP证B1034-8373号</li>
+                <li>深圳市公安局备案编号：12345678912</li>
+            </ul>
+        </div>
+        <div class="webpic">
+            <ul>
+                <li><img src="images/website-pic.png" alt="网站可信度评价"/></li>
+                <li><img src="images/website-pic.png" alt="网站可信度评价"/></li>
+                <li><img src="images/website-pic.png" alt="网站可信度评价"/></li>
+                <li><img src="images/website-pic.png" alt="网站可信度评价"/></li>
+            </ul>
+        </div>
+    </div>
+</div><!--公共底部结束-->
+</div>
+<script src="script/jquery.min.js"></script>
+<script src="script/shopCar.js"></script>
+</body>
+</html>

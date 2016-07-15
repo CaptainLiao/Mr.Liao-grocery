@@ -1,0 +1,186 @@
+html,body,div,table,thead,th,tbody,td,span,a {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font: 14px/2 "微软雅黑",sans-serif;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.hide {
+	display: none;
+}
+.show{
+	display: block;
+}
+.on {
+	background-color: #55dddd;
+}
+
+.shopCar {
+	width: 977px;
+	margin: 50px auto;
+
+}
+
+#cartTable {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#cartTable thead {
+	background-color: #f55;
+}
+#cartTable th,
+#cartTable td {
+	border: 1px solid #ccc;
+}
+#cartTable th.goods {
+	text-align: center;
+}
+#cartTable th.subTotal {
+	font-size: 14px;
+	color: #000;
+}
+#cartTable thead tr {
+	height: 60px;
+}
+
+#cartTable tr {
+	height: 120px;
+}
+
+#cartTable .checkbox {
+	width: 100px;
+}
+#cartTable .goods  {
+	width: 380px;
+	text-align: left;
+}
+.goods a{
+	text-decoration: none;
+	color: #000;
+}
+.goods a:hover{
+	color: #e00;
+}
+#cartTable .goods img {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 120px;
+	height: 80px;
+	vertical-align: middle;
+}
+
+#cartTable .goods .goodsDes {
+	display: inline-block;
+	word-break: break-all;
+	word-wrap: break-word;
+	width: 200px;
+	vertical-align: middle;
+}
+
+#cartTable .price,
+.subTotal,
+.cancel {
+	width: 120px;
+}
+.subTotal1 {
+	width: 120px;
+}
+
+#cartTable .count {
+	width: 150px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.count span {
+	display: inline-block;
+	float: left;
+	background-color: #eee;
+	width: 30px;
+	height: 30px;
+}
+.count span:hover {
+	background-color: #f10888;
+}
+
+.count input {
+	display: inline-block;
+	float: left;
+	width: 60px;
+	height : 30px ;
+	* height : 22px ;
+	-moz-box-sizing : border-box ;
+	-webkit-box-sizing : border-box ;
+	box-sizing : border-box ;
+	border: 1px solid #eee;
+	padding-left: 5px;
+}
+
+.subTotal {
+	color: #f00;
+	font-size: 18px;
+
+}
+
+.delete:hover {
+	color: #f00;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*footer*/
+.footer {
+	position: relative;
+	width: 975px;
+	height: 60px;
+	line-height: 60px;
+	margin: 10px auto;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	color: #999;
+	font-size: 16px;
+
+}
+
+.deleteAll {
+	display: inline-block;
+	padding-left: 60px;
+	text-decoration: none;
+	color: #999;
+}
+
+.closing,
+.total,
+.selected {
+	margin-right: 20px;
+	text-align: center;
+}
+.closing {
+	width: 120px;
+	margin-right: 0;
+	border-left: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.total .priceTotal,
+#selectTotal {
+	font-size: 18px;
+	color: #f00;
+}
+
+#selectedView {
+	position: absolute;
+	left: 0;
+	bottom:60px;
+	width: 975px;
+	height: 120px;
+	border: 1px solid #ccc;
+	background-color: #f00;
+}
